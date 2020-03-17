@@ -1,4 +1,4 @@
-/* eslint-disable strict */
+'use strict';
 function personMaker() {
   var person = {
     firstName: 'Paul',
@@ -10,8 +10,7 @@ function personMaker() {
     }
   };return person;
 }
-  
-'use strict';
+
 function createMyObject() {
   return{
     foo: 'bar',
@@ -69,6 +68,8 @@ const sampleObj = {
   bang: 'bang',
 };
 
+
+//---------------------------------keyDeleter--------------------------------------------------------------
 function keyDeleter(obj) {
 	delete obj.foo;
 	delete obj.bar;
