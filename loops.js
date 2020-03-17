@@ -1,6 +1,5 @@
 'use strict';
 
-
 function average (num){
   let sum= 0;
   num.forEach(element => {
@@ -71,33 +70,13 @@ function min(numbers) {
 }
 
 // tests
-
-function testFunctionWorks(fn, input, expected) {
-  if (fn(input) === expected) {
-    console.log('SUCCESS: `' + fn.name + '` works on `[' + input + ']`');
+function testEmpty(x) {
+  if (x([]) === null || x([]) === undefined) {
+    console.log(`SUCCESS: ${x.name} works on empty arrays`);
     return true;
   } else {
     console.log(
-      'FAILURE: `' +
-          fn.name +
-          '([' +
-          input +
-          '])` should be ' +
-          expected +
-          ' but was ' +
-          fn(input)
-    );
-    return false;
-  }
-}
-  
-function testEmpty(fn) {
-  if (fn([]) === null || fn([]) == undefined) {
-    console.log(`SUCCESS: ${fn.name} works on empty arrays`);
-    return true;
-  } else {
-    console.log(
-      `FAILURE: ${fn.name} should return undefined or null for empty arrays`
+      `FAILURE: ${x.name} should return undefined or null for empty arrays`
     );
     return false;
   }

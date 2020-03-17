@@ -1,10 +1,10 @@
 /* eslint-disable strict */
 function makeStudentsReport(data) {
-  let finalReport = []
+  let finalReport = [];
   for (let i = 0; i < data.length; i++) {
-    finalReport.push(`${data[i].name}: ${data[i].grade}`)
+    finalReport.push(`${data[i].name}: ${data[i].grade}`);
   }
-  return finalReport
+  return finalReport;
 }
   
 /* From here down, you are not expected to 
@@ -103,7 +103,7 @@ const scratchData = [
 ];
 
 function findById(items, idNum) {
-  return items.find(x => x.id === idNum)
+  return items.find(x => x.id === idNum);
 }
 
 //
